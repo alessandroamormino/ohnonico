@@ -1,0 +1,274 @@
+/* Resetto i margini */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+ #video-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  } 
+
+  #showreel-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+
+.center{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  font-family: 'Bungee Outline', cursive;
+}
+.testo{
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.first a{ 
+  font-size: 27.5rem;
+  line-height: 85%;
+  letter-spacing: 1rem;
+}
+.second {
+  font-size: 20rem;
+  line-height: 100%;
+  letter-spacing: 1rem;
+}
+
+.first a:link{
+  text-decoration: none;
+  color: #ffffff;
+}
+.first a:visited{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.second a:link{
+  text-decoration: none;
+  color: #ffffff;
+}
+.second a:visited{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.desc{
+  /* position: fixed;
+  padding-top: 17.5px;
+  width: 100%;
+  text-align: center;
+  z-index: 1; */
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+/* Animation about page */
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+    /* top: 50px; */
+    top: 150px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.content{
+  position: absolute;
+  margin: 12vw 0 0 7vw;
+  width: 55vw;
+}
+
+.content h1{
+  position: relative;
+  font-size: 90px;
+  line-height: 90%;
+  animation: fade-in .6s linear forwards;
+}
+
+.main{
+  opacity: 0;
+  position: relative;
+  animation: fade-in 0.6s linear forwards .7s;
+}
+
+.greetings{
+  opacity: 0;
+  position: relative;
+  animation: fade-in 0.6s linear forwards 1.3s;
+  font-weight: bold;
+}
+
+.content p{
+  font-size: 28px;
+}
+
+
+/* Nav */
+
+nav {
+  position: absolute;
+  width: 100%;
+  background: #ffe12b;
+  padding: 0 15px;
+  z-index: 1;
+}
+li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo {
+  font-size: 18px;
+  padding: 7.5px 10px 7.5px 0;
+}
+.item {
+  padding: 10px;
+}
+.menu a:hover {
+  font-style: italic;
+} 
+
+.attivo a{
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 8px 10px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 12px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+}
+
+/* Tablet menu */
+/* @media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+} */
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: center;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+
+  .center-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
