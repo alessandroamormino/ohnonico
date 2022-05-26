@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* Style the video: 100% width and height to cover the entire window */
  #video-bg {
     position: fixed;
