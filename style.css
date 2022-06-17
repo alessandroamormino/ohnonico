@@ -9,13 +9,25 @@
   font-family: AlbraBold;
   src: url('font/Albra\ Bold.otf');
 }
+@font-face {
+  font-family: DupletRounded-Extrabold;
+  src: url('font/DupletRounded-Extrabold.otf');
+}
+@font-face {
+  font-family: DupletRounded-Semibold;
+  src: url('font/DupletRounded-Semibold.otf');
+}
+
+body{
+  font-family: 'AlbraBold';
+}
 
 /* Nav */
 
 nav {
   /* position: absolute; */
   width: 100vw;
-  background: yellow;
+  background: #EFE402;
   padding: 0 15px;
   z-index: 1;
 }
@@ -44,19 +56,23 @@ li a {
   font-style: italic;
 }
 
-.center{
-  /* position: absolute; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: calc(100vh - 54.5px);
-  z-index: 0;
-  font-family: 'AlbraBold';
-  font-style: italic;
-  position: relative;
-
+@media all and (max-width: 580px) {
+  .gif-content{
+    height: calc(100vh - 54.5px);
+    z-index: 0;
+    font-style: italic;
+    position: relative;
+    content: url(./res/ONN_LOVE-REEL_TEST_9.16.gif);
+    width: 100%;
+  }
+  
+  #gif{
+    width: 100%;
+    max-width: 100%;
+    height: 100%; 
+    /* height: auto; */
+  }
 }
-
 /* Style the video: 100% width and height to cover the entire window */
  #video-bg {
   position: absolute;
@@ -81,7 +97,7 @@ li a {
 
 .testo{
   text-align: center;
-  color: yellow;
+  color: #EFE402;
   z-index: 1;
 }
 
@@ -98,28 +114,23 @@ li a {
 
 .first a:link{
   text-decoration: none;
-  color: yellow;
+  color: #EFE402;
 }
 .first a:visited{
   text-decoration: none;
-  color: yellow;
+  color: #EFE402;
 }
 
 .second a:link{
   text-decoration: none;
-  color: yellow;
+  color: #EFE402;
 }
 .second a:visited{
   text-decoration: none;
-  color: yellow;
+  color: #EFE402;
 }
 
 .desc{
-  /* position: fixed;
-  padding-top: 17.5px;
-  width: 100%;
-  text-align: center;
-  z-index: 1; */
   font-family: 'Poppins', sans-serif;
   font-style: italic;
 }
@@ -141,13 +152,16 @@ li a {
 
 .content{
   position: absolute;
-  margin: 12vw 0 0 7vw;
-  width: 55vw;
+  top: 50%;
+  left: 35%; 
+  transform: translate(-50%, -50%);
+  /* margin: 10vw 0 0 7vw; */
+  /* width: 55vw; */
 }
 
 .content .primo{
   position: relative;
-  font-size: 90px;
+  font-size: 120px;
   line-height: 90%;
   animation: fade-in .25s linear forwards;
 }
@@ -155,7 +169,7 @@ li a {
 .content .secondo{
   opacity: 0;
   position: relative;
-  font-size: 90px;
+  font-size: 120px;
   line-height: 90%;
   animation: fade-in .2s linear forwards .3s;
 }
@@ -163,7 +177,7 @@ li a {
 .content .terzo{
   opacity: 0;
   position: relative;
-  font-size: 90px;
+  font-size: 120px;
   line-height: 90%;
   animation: fade-in .4s linear forwards .5s;
 }
@@ -172,16 +186,19 @@ li a {
   opacity: 0;
   position: relative;
   animation: fade-in 0.4s linear forwards .7s;
+  font-family: DupletRounded-Semibold;
 }
 .line2{
   opacity: 0;
   position: relative;
   animation: fade-in 0.4s linear forwards .9s;
+  font-family: DupletRounded-Semibold;
 }
 .line3{
   opacity: 0;
   position: relative;
   animation: fade-in 0.4s linear forwards 1.1s;
+  font-family: DupletRounded-Semibold;
 }
 
 .greetings{
@@ -192,7 +209,7 @@ li a {
 }
 
 .content p{
-  font-size: 28px;
+  font-size: 36px;
 }
 
 /* Mobile menu */
@@ -310,4 +327,20 @@ li a {
   .submenu-active {
     border-radius: 0;
   }
+
+  .gif-content{
+    height: calc(100vh - 54.5px);
+    z-index: 0;
+    font-style: italic;
+    position: relative;
+    content: url(./res/ONN_LOVE-REEL_TEST.gif);
+    width: 100%;
+  }
+  
+  #gif{
+    width: 100%;
+    max-width: 100%;
+    height: 100%; 
+  }
+
 }
