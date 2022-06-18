@@ -76,23 +76,21 @@ li a {
     }
   }
   
-  .content{
+  .about-content{
     position: absolute;
-    top: 50%;
-    left: 50%; 
+    top: 50%; 
+    left: 50%;  
     transform: translate(-50%, -50%);
-    /* margin: 10vw 0 0 7vw; */
-    /* width: 55vw; */
   }
   
-  .content .primo{
+  .about-content .primo{
     position: relative;
     font-size: 7vh;
     line-height: 90%;
     animation: fade-in .25s linear forwards;
   }
   
-  .content .secondo{
+  .about-content .secondo{
     opacity: 0;
     position: relative;
     font-size: 7vh;
@@ -100,7 +98,7 @@ li a {
     animation: fade-in .2s linear forwards .3s;
   }
   
-  .content .terzo{
+  .about-content .terzo{
     opacity: 0;
     position: relative;
     font-size: 7vh;
@@ -134,7 +132,7 @@ li a {
     font-weight: bold;
   }
   
-  .content p{
+  .about-content p{
     font-size: 2.8vh;
   }
 
@@ -366,7 +364,7 @@ li a {
     }
   }
   
-  .content{
+  .about-content{
     position: absolute;
     top: 50%;
     left: 35%; 
@@ -375,14 +373,14 @@ li a {
     /* width: 55vw; */
   }
   
-  .content .primo{
+  .about-content .primo{
     position: relative;
     font-size: 8vh;
     line-height: 90%;
     animation: fade-in .25s linear forwards;
   }
   
-  .content .secondo{
+  .about-content .secondo{
     opacity: 0;
     position: relative;
     font-size: 8vh;
@@ -390,7 +388,7 @@ li a {
     animation: fade-in .2s linear forwards .3s;
   }
   
-  .content .terzo{
+  .about-content .terzo{
     opacity: 0;
     position: relative;
     font-size: 8vh;
@@ -424,7 +422,7 @@ li a {
     font-weight: bold;
   }
   
-  .content p{
+  .about-content p{
     font-size: 3.5vh;
   }
 
