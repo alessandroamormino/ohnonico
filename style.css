@@ -60,6 +60,39 @@ li a {
   color: rgba(0, 0, 0, 0.5)
 }
 
+/* Footer about page */
+
+.foo-container > a{
+  text-decoration: none;
+}
+
+.cv{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.insta{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.vimeo{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cv:hover{
+  color: #000000;
+  font-style: italic;
+}
+
+.insta:hover{
+  color: #000000;
+  font-style: italic;
+}
+
+.vimeo:hover{
+  color: #000000;
+  font-style: italic;
+}
+
 
 /* Animation about page */
 /* Versione per mobile e tablet */
@@ -165,6 +198,14 @@ li a {
     width: 100%;
     height: 100%;
     }
+
+   /* Footer About page */
+   
+  .foo-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
 
 }
 /* Style the video: 100% width and height to cover the entire window */
@@ -279,7 +320,7 @@ li a {
 }
 
 /* Tablet menu */
-@media all and (max-width: 966px) {
+@media all and (min-width: 580px) {
   /* .menu {
     justify-content: center;
   }
@@ -297,6 +338,22 @@ li a {
     order: 2;
   } */
 
+  /* Homepage */
+  .gif-content{
+    height: calc(100vh - 54.5px);
+    z-index: 0;
+    font-style: italic;
+    position: relative;
+    content: url(./res/ONN_LOVE-REEL_TEST_20.27.gif);
+    width: 100%;
+  }
+  
+  #gif{
+    width: 100%;
+    max-width: 100%;
+    height: 100%; 
+  }
+
   /* Showreel */
   #showreel-video{
     position: absolute;
@@ -304,12 +361,20 @@ li a {
     transform: translate(0, -50%);
     width: 100%;
     height: 100%;
-    }
+  }
+
+   /* Footer About page */
+
+  .foo-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
 
 }
 
 /* Desktop menu */
-@media all and (min-width: 960px) {
+@media all and (min-width: 1200px) {
   .menu {
     align-items: center;
     flex-wrap: nowrap;
@@ -443,37 +508,6 @@ li a {
     position: absolute;
     width: 100vw;
     bottom: 2vh;
-  }
-
-  .foo-container > a{
-    text-decoration: none;
-  }
-
-  .cv{
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .insta{
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .vimeo{
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .cv:hover{
-    color: #000000;
-    font-style: italic;
-  }
-
-  .insta:hover{
-    color: #000000;
-    font-style: italic;
-  }
-
-  .vimeo:hover{
-    color: #000000;
-    font-style: italic;
   }
 
   /* Showreel */
