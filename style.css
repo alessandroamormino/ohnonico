@@ -139,11 +139,6 @@ li a {
   margin: 7vh;
 }
 
-.about-footer{
-  font-family: DupletRounded-Semibold;
-  text-align: center;
-  margin-top: 15vh;
-}
 
 @media all and (max-width: 580px) {
   .gif-content{
@@ -433,9 +428,47 @@ li a {
     font-size: 3.5vh;
   }
 
-  .about-footer{
-    text-align: center;
-    margin-top: 15vh;
+  .foo-container{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100vw;
+    bottom: 2vh;
+  }
+
+  .foo-container > a{
+    text-decoration: none;
+  }
+
+  .foo-container > a:{
+    color: #000000;
+  }
+
+  .cv{
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .insta{
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .vimeo{
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cv:hover{
+    color: #000000;
+    font-style: italic;
+  }
+
+  .insta:hover{
+    color: #000000;
+    font-style: italic;
+  }
+
+  .vimeo:hover{
+    color: #000000;
+    font-style: italic;
   }
 
 }
