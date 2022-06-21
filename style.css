@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: AlbraLigh;
+  font-family: AlbraLight;
   src: url('font/Albra\ Light.otf');
 }
 
@@ -56,6 +56,7 @@ li a {
 }
 .menu a:hover {
   font-style: italic;
+  font-family: 'AlbraBold';
   color: #000000;
 } 
 
@@ -65,7 +66,8 @@ li a {
 }
 
 .non-attivo a{
-  color: rgba(0, 0, 0, 0.5)
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'AlbraLight';
 }
 
 /* Footer about page */
@@ -102,133 +104,6 @@ li a {
 }
 
 
-/* Animation about page */
-/* Versione per mobile e tablet */
-
-@keyframes fade-in {
-  0%{
-    opacity: 0;
-    /* top: 50px; */
-    top: 20px;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
-}
-
-.about-content .primo{
-  position: relative;
-  font-size: 7.5vh;
-  line-height: 90%;
-  animation: fade-in .25s linear forwards;
-}
-
-.about-content .secondo{
-  opacity: 0;
-  position: relative;
-  font-size: 7.5vh;
-  line-height: 90%;
-  animation: fade-in .2s linear forwards .3s;
-}
-
-.about-content .terzo{
-  opacity: 0;
-  position: relative;
-  font-size: 15vh;
-  line-height: 90%;
-  animation: fade-in .4s linear forwards .5s;
-}
-
-.line1{
-  opacity: 0;
-  position: relative;
-  animation: fade-in 0.4s linear forwards .7s;
-  font-family: DupletRounded-Semibold;
-}
-.line2{
-  opacity: 0;
-  position: relative;
-  animation: fade-in 0.4s linear forwards .9s;
-  font-family: DupletRounded-Semibold;
-}
-.line3{
-  opacity: 0;
-  position: relative;
-  animation: fade-in 0.4s linear forwards 1.1s;
-  font-family: DupletRounded-Semibold;
-}
-
-.greetings{
-  opacity: 0;
-  position: relative;
-  animation: fade-in 0.6s linear forwards 1.3s;
-  font-weight: bold;
-}
-
-.about-content p{
-  font-size: 2.8vh;
-}
-
-.about-content{
-  /* position: absolute;
-  top: 50%; 
-  left: 50%;  
-  transform: translate(-50%, -50%); */
-  margin: 7vh 7vh 0 7vh;
-}
-
-
-@media all and (max-width: 580px) {
-  .gif-content{
-    height: calc(100vh - 54.5px);
-    z-index: 0;
-    font-style: italic;
-    position: relative;
-    content: url(./res/ONN_LOVE-REEL_TEST_9.16.gif);
-    width: 100%;
-  }
-  
-  #gif{
-    width: 100%;
-    max-width: 100%;
-    height: 100%; 
-    /* height: auto; */
-  }
-
-  /* Showreel */
-  #showreel-video{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    height: 100%;
-    }
-
-  /* Footer About page */
-
-  .logo.invisibile{
-    color: transparent;
-  }
-  .center-nav{
-    margin-left: 7vh;
-  } 
-  .center-nav > a {
-    display: block;
-  }
-
-  .foo-container{
-    font-size: 2.8vh;
-    margin-bottom: 7vh;
-  }
-
-  .copyright{
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.3);
-    margin: 7vh;
-  }
-
-}
 /* Style the video: 100% width and height to cover the entire window */
  #video-bg {
   position: absolute;
@@ -339,24 +214,133 @@ li a {
   border-radius: 3px;
 }
 
-/* Tablet menu */
-@media all and (min-width: 580px) {
-  /* .menu {
-    justify-content: center;
+/* Mobile */
+
+@media all and (max-width: 580px) {
+  .gif-content{
+    height: calc(100vh - 54.5px);
+    z-index: 0;
+    font-style: italic;
+    position: relative;
+    content: url(./res/ONN_LOVE-REEL_TEST_9.16.gif);
+    width: 100%;
   }
-  .logo {
-    flex: 1;
+  
+  #gif{
+    width: 100%;
+    max-width: 100%;
+    height: 100%; 
+    /* height: auto; */
   }
-  .item.button {
-    width: auto;
-    order: 1;
+
+  /* Showreel */
+  #showreel-video{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 100%;
+    }
+
+  /* Animation about page */
+  /* Versione mobile */
+
+  @keyframes fade-in {
+    0%{
+      opacity: 0;
+      /* top: 50px; */
+      top: 20px;
+    }
+    100% {
+      opacity: 1;
+      top: 0px;
+    }
+  }
+
+  .about-content .primo{
+    position: relative;
+    font-size: 10vh;
+    line-height: 90%;
+    animation: fade-in .25s linear forwards;
+  }
+
+  .about-content .secondo{
+    opacity: 0;
+    position: relative;
+    font-size: 10vh;
+    line-height: 90%;
+    animation: fade-in .2s linear forwards .3s;
+  }
+
+  .about-content .terzo{
+    opacity: 0;
+    position: relative;
+    font-size: 14vh;
+    line-height: 90%;
+    animation: fade-in .4s linear forwards .5s;
+  }
+
+  .line1{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.4s linear forwards .7s;
+    font-family: DupletRounded-Semibold;
+  }
+  .line2{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.4s linear forwards .9s;
+    font-family: DupletRounded-Semibold;
+  }
+  .line3{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.4s linear forwards 1.1s;
+    font-family: DupletRounded-Semibold;
+  }
+
+  .about-content p{
+    font-size: 2.3vh;
+  }
+
+  .greetings{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.6s linear forwards 1.3s;
+    font-weight: bold;
+    margin-top: 4vh;
+  }
+
+  .about-content{
+    margin: 7vh 7vh 0 7vh;
+  }
+
+  /* Footer About page */
+
+  .logo.invisibile{
+    color: transparent;
+  }
+  .center-nav{
+    margin-left: 7vh;
+  } 
+  .center-nav > a {
     display: block;
   }
-  .toggle {
-    flex: 1;
-    text-align: right;
-    order: 2;
-  } */
+
+  .foo-container{
+    font-size: 2.3vh;
+    margin-bottom: 7vh;
+  }
+
+  .copyright{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 7vh;
+  }
+}
+
+/* Tablet */
+@media all and (min-width: 580px) {
 
   /* Homepage */
   .gif-content{
@@ -383,32 +367,115 @@ li a {
     height: 100%;
   }
 
-  /* Footer About page */
+  /* Animation about page */
+  /* Versione tablet */
 
-  .logo.invisibile{
-    color: transparent;
-  }
-  .center-nav{
-    margin-left: 7vh;
-  }
-  
-  .center-nav > a {
-    display: block;
+  @keyframes fade-in {
+    0%{
+      opacity: 0;
+      /* top: 50px; */
+      top: 20px;
+    }
+    100% {
+      opacity: 1;
+      top: 0px;
+    }
   }
 
-  .foo-container{
+  .about-content .primo{
+    position: relative;
+    font-size: 14vh;
+    line-height: 90%;
+    animation: fade-in .25s linear forwards;
+  }
+
+  .about-content .secondo{
+    opacity: 0;
+    position: relative;
+    font-size: 14vh;
+    line-height: 90%;
+    animation: fade-in .2s linear forwards .3s;
+  }
+
+  .about-content .terzo{
+    opacity: 0;
+    position: relative;
+    font-size: 17vh;
+    line-height: 90%;
+    animation: fade-in .4s linear forwards .5s;
+  }
+
+  .line1{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.4s linear forwards .7s;
+    font-family: DupletRounded-Semibold;
+  }
+  .line2{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.4s linear forwards .9s;
+    font-family: DupletRounded-Semibold;
+  }
+  .line3{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.4s linear forwards 1.1s;
+    font-family: DupletRounded-Semibold;
+  }
+
+  .greetings{
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.6s linear forwards 1.3s;
+    font-weight: bold;
+    margin: 4vh 0 1vh 0;
+  }
+
+  .about-content p{
     font-size: 2.8vh;
   }
 
-  .copyright{
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.3);
-    margin: 7vh;
+  .about-content{
+    /* position: absolute;
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); */
+    margin: 7vh 7vh 0 7vh;
   }
+
+    /* Footer About page */
+
+    .logo.invisibile{
+      color: transparent;
+    }
+    .center-nav{
+      margin-left: 7vh;
+    }
+    
+    .center-nav > a {
+      display: block;
+    }
+
+    .foo-container{
+      font-size: 2.3vh;
+    }
+
+    .copyright{
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.3);
+      margin: 7vh;
+    }
+
+    /* about content */
+
+    .about-content p{
+      font-size: 2.3vh;
+    }
 
 }
 
-/* Desktop menu */
+/* Desktop */
 @media all and (min-width: 1200px) {
   .menu {
     align-items: center;
@@ -438,7 +505,7 @@ li a {
     order: 1;
     position: relative;
     display: block;
-    width: auto;
+    width: 6vw;
   }
   .submenu-active .submenu {
     display: block;
@@ -485,16 +552,13 @@ li a {
   }
   
   .about-content{
-    /* position: absolute;
-    top: 50%; 
-    left: 50%;  
-    transform: translate(-50%, -50%); */
-    margin: 15vh 0 0 15vh;
+    margin: 10vh 0 0 10vh;
   }
   
   .about-content .primo{
     position: relative;
-    font-size: 8vh;
+    /* font-size: 8vh; */
+    font-size: 17vh;
     line-height: 90%;
     animation: fade-in .25s linear forwards;
   }
@@ -502,7 +566,8 @@ li a {
   .about-content .secondo{
     opacity: 0;
     position: relative;
-    font-size: 8vh;
+    /* font-size: 8vh; */
+    font-size: 17vh;
     line-height: 90%;
     animation: fade-in .2s linear forwards .3s;
   }
@@ -510,7 +575,8 @@ li a {
   .about-content .terzo{
     opacity: 0;
     position: relative;
-    font-size: 8vh;
+    /* font-size: 8vh; */
+    font-size: 17vh;
     line-height: 90%;
     animation: fade-in .4s linear forwards .5s;
   }
@@ -534,15 +600,16 @@ li a {
     font-family: DupletRounded-Semibold;
   }
   
+  .about-content p{
+    font-size: 2.5vh;
+  }
+
   .greetings{
     opacity: 0;
     position: relative;
     animation: fade-in 0.6s linear forwards 1.3s;
     font-weight: bold;
-  }
-  
-  .about-content p{
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
 
   /* Footer about page*/
@@ -557,15 +624,15 @@ li a {
   }
 
   #cv{
-    margin-left: 2vw;
+    margin-left: 1.5vw;
   }
 
   #ins{
-    margin-right: 1.5vw;
+    margin-right: 0.5vw;
   }
 
   #vim{
-    margin-right: 3.37vw;
+    margin-right: 1vw;
   }
 
   .copyright{
@@ -587,5 +654,7 @@ li a {
     height: 100%;
     z-index: -1; 
     }
+
+
 
 }
