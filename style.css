@@ -34,11 +34,12 @@ nav {
 li a {
   color: #000000;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 .menu,
 .submenu {
   list-style-type: none;
+  font-family: 'AlbraBold';
 }
 .logo {
   font-size: 18px;
@@ -49,6 +50,7 @@ li a {
 }
 .menu a:hover {
   font-style: italic;
+  color: #000000;
 } 
 
 .attivo a{
@@ -62,7 +64,7 @@ li a {
 
 /* Footer about page */
 
-.foo-container > a{
+.foo-container a{
   text-decoration: none;
 }
 
@@ -261,7 +263,6 @@ li a {
   font-style: italic;
 }
 
-/* Mobile menu */
 .menu {
   display: flex;
   /* flex-wrap: wrap; */
@@ -271,7 +272,7 @@ li a {
 
 .menu li a {
   display: block;
-  padding: 8px 10px;
+  /* padding: 6px 10px; */
 }
 .menu li.subitem a {
   padding: 15px;
@@ -368,7 +369,7 @@ li a {
   .foo-container{
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 99%;
   }
 
 }
@@ -382,13 +383,21 @@ li a {
   }
   .logo {
     order: 0;
+    z-index: 99;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .logo.invisibile{
+    color: transparent;
   }
 
   .center-nav{
     display: flex;
-    width: 100%;
+    width: 99%;
     justify-content: space-evenly;
     flex: 1;
+    /* position: absolute; */
   }
 
   .item {
@@ -506,8 +515,9 @@ li a {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     bottom: 2vh;
+    /* margin-left: 15px; */
   }
 
   /* Showreel */
