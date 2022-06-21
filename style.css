@@ -9,6 +9,12 @@
   font-family: AlbraBold;
   src: url('font/Albra\ Bold.otf');
 }
+
+@font-face {
+  font-family: AlbraLigh;
+  src: url('font/Albra\ Light.otf');
+}
+
 @font-face {
   font-family: DupletRounded-Extrabold;
   src: url('font/DupletRounded-Extrabold.otf');
@@ -111,8 +117,6 @@ li a {
   }
 }
 
-
-
 .about-content .primo{
   position: relative;
   font-size: 7.5vh;
@@ -171,7 +175,7 @@ li a {
   top: 50%; 
   left: 50%;  
   transform: translate(-50%, -50%); */
-  margin: 7vh;
+  margin: 7vh 7vh 0 7vh;
 }
 
 
@@ -201,12 +205,27 @@ li a {
     height: 100%;
     }
 
-   /* Footer About page */
-   
+  /* Footer About page */
+
+  .logo.invisibile{
+    color: transparent;
+  }
+  .center-nav{
+    margin-left: 7vh;
+  } 
+  .center-nav > a {
+    display: block;
+  }
+
   .foo-container{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
+    font-size: 2.8vh;
+    margin-bottom: 7vh;
+  }
+
+  .copyright{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 7vh;
   }
 
 }
@@ -364,12 +383,27 @@ li a {
     height: 100%;
   }
 
-   /* Footer About page */
+  /* Footer About page */
+
+  .logo.invisibile{
+    color: transparent;
+  }
+  .center-nav{
+    margin-left: 7vh;
+  }
+  
+  .center-nav > a {
+    display: block;
+  }
 
   .foo-container{
-    display: flex;
-    justify-content: space-evenly;
-    width: 99%;
+    font-size: 2.8vh;
+  }
+
+  .copyright{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 7vh;
   }
 
 }
@@ -511,13 +545,36 @@ li a {
     font-size: 3.5vh;
   }
 
+  /* Footer about page*/
+
   .foo-container{
     display: flex;
     justify-content: space-evenly;
     position: absolute;
     width: 100%;
     bottom: 2vh;
-    /* margin-left: 15px; */
+    font-size: 16px;
+  }
+
+  #cv{
+    margin-left: 2vw;
+  }
+
+  #ins{
+    margin-right: 1.5vw;
+  }
+
+  #vim{
+    margin-right: 3.37vw;
+  }
+
+  .copyright{
+    position: absolute;
+    bottom: 0.2vh;
+    right: 2vh;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 0;
   }
 
   /* Showreel */
