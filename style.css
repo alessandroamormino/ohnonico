@@ -28,46 +28,6 @@ body{
   font-family: 'AlbraBold';
 }
 
-/* Nav */
-
-/* nav {
-  width: 100vw;
-  background: #EFE402;
-  padding: 0 15px;
-  z-index: 1;
-}
-li a {
-  color: #000000;
-  text-decoration: none;
-}
-.menu,
-.submenu {
-  list-style-type: none;
-  font-family: 'AlbraBold';
-}
-.logo {
-  font-size: 18px;
-  padding: 7.5px 10px 7.5px 0;
-}
-.item {
-  padding: 10px;
-}
-.menu a:hover {
-  font-style: italic;
-  font-family: 'AlbraBold';
-  color: #000000;
-} 
-
-.attivo a{
-  font-weight: 600;
-  font-style: italic;
-}
-
-.non-attivo a{
-  color: rgba(0, 0, 0, 0.5);
-  font-family: 'AlbraLight';
-} */
-
 /* Footer about page */
 
 .foo-container a{
@@ -155,78 +115,18 @@ li a {
   font-style: italic;
 }
 
-/* .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
 
-.menu li a {
-  display: block;
-}
-.menu li.subitem a {
-  padding: 15px;
-}
-.toggle {
-  order: 1;
-  font-size: 20px;
-}
-.item.button {
-  order: 2;
-}
-.item {
-  order: 3;
+.about-content{
   width: 100%;
-  text-align: center;
-  display: none;
+  position: absolute;
+  top: 100px;
+  margin-top: 35px;
+  margin-left: 35px;
 }
-.active .item {
-  display: block;
-} */
-/* Submenu up from mobile screens */
-/* .submenu {
-  display: none;
-}
-.submenu-active .submenu {
-  display: block;
-}
-.has-submenu i {
-  font-size: 12px;
-}
-.has-submenu > a::after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  content: "\f078";
-  color: white;
-  padding-left: 5px;
-}
-.subitem a {
-  padding: 10px 15px;
-}
-.submenu-active {
-  background-color: #111;
-  border-radius: 3px;
-} */
 
 /* Mobile */
 
 @media all and (max-width: 580px) {
-  /* .gif-content{
-    height: calc(100vh - 54.5px);
-    z-index: 0;
-    font-style: italic;
-    position: relative;
-    content: url(./res/ONN_LOVE-REEL_TEST_9.16.gif);
-    width: 100%;
-  } */
-  
-  /* #gif{
-    width: 100%;
-    max-width: 100%;
-    height: 100%; 
-  } */
 
   /* Showreel */
   #showreel-video{
@@ -306,10 +206,6 @@ li a {
     margin-top: 4vh;
   }
 
-  .about-content{
-    margin: 7vh 7vh 0 7vh;
-  }
-
   /* Footer About page */
 
   .logo.invisibile{
@@ -336,22 +232,6 @@ li a {
 
 /* Tablet */
 @media all and (min-width: 580px) {
-
-  /* Homepage */
-  /* .gif-content{
-    height: calc(100vh - 54.5px);
-    z-index: 0;
-    font-style: italic;
-    position: relative;
-    content: url(./res/ONN_LOVE-REEL_TEST_20.27.gif);
-    width: 100%;
-  }
-  
-  #gif{
-    width: 100%;
-    max-width: 100%;
-    height: 100%; 
-  } */
 
   /* Showreel */
   #showreel-video{
@@ -431,14 +311,6 @@ li a {
     font-size: 2.8vh;
   }
 
-  .about-content{
-    /* position: absolute;
-    top: 50%; 
-    left: 50%;  
-    transform: translate(-50%, -50%); */
-    margin: 7vh 7vh 0 7vh;
-  }
-
     /* Footer About page */
 
     .logo.invisibile{
@@ -472,64 +344,10 @@ li a {
 
 /* Desktop */
 @media all and (min-width: 1200px) {
-  /* .menu {
-    align-items: center;
-    flex-wrap: nowrap;
-    background: none;
-  }
-  .logo {
-    order: 0;
-    z-index: 99;
-    font-weight: 600;
-    font-style: italic;
-  } */
 
   .logo.invisibile{
     color: transparent;
   }
-
-  /* .center-nav{
-    display: flex;
-    width: 99%;
-    justify-content: space-evenly;
-    flex: 1;
-  } */
-/* 
-  .item {
-    order: 1;
-    position: relative;
-    display: block;
-    width: 6vw;
-  }
-  .submenu-active .submenu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 68px;
-    background: #111;
-  }
-  .toggle {
-    display: none;
-  }
-  .submenu-active {
-    border-radius: 0;
-  } */
-
-  /* .gif-content{
-    height: calc(100vh - 54.5px);
-    z-index: 0;
-    font-style: italic;
-    position: relative;
-    content: url(./res/ONN_LOVE-REEL_TEST.gif);
-    width: 100%;
-  }
-  
-  #gif{
-    width: 100%;
-    max-width: 100%;
-    height: 100%; 
-  } */
-
 
   /* Animation about page */
 
@@ -543,10 +361,6 @@ li a {
       opacity: 1;
       top: 0px;
     }
-  }
-  
-  .about-content{
-    margin: 10vh 0 0 10vh;
   }
   
   .about-content .primo{
@@ -653,7 +467,8 @@ li a {
 /* Nav New*/
 nav {
   float: right;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   right: 0;
 }
 nav ul {
@@ -704,7 +519,6 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  /* background: #efe30200; */
   height: 100px;
   width: 100px;
 }
@@ -756,7 +570,6 @@ nav ul li ul li a {
   nav {
     width: 100%;
     padding: 80px 0 15px;
-    z-index: 99;
   }
   nav ul {
     display: none;
@@ -778,15 +591,21 @@ nav ul li ul li a {
   }
   .navigation {
     height: 100px;
+    width: 100%;
     background: #EFE402;
+    position: fixed;
+    z-index: 99;
   }
   .brand a,
   .brand a:visited {
     color: #000000;
     text-decoration: none;
   }
-
   nav ul li a {
+    background: #EFE402;
+  }
+  .nav-list{
+    padding: 0 25px 25px;
     background: #EFE402;
   }
 }
@@ -797,7 +616,9 @@ nav ul li ul li a {
   }
   .navigation {
     height: 100px;
-    background: #efe30200;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
   }
 
   .brand a,
@@ -808,7 +629,8 @@ nav ul li ul li a {
 }
 
 .nav-list{
-  padding-right: 25px;
+  padding-left: 25px;
+  background: #EFE402;
 }
 
 .nav-container {
@@ -817,10 +639,31 @@ nav ul li ul li a {
 }
 
 .brand {
-  position: absolute;
+  position: fixed;
   padding-left: 40px;
   float: left;
   line-height: 100px;
   font-size: 1.8em;
-  left: 0;
+  left: 0; 
+}
+
+:root{
+  --firstSVG : url('./res/OUTLINE.svg');
+  --secondSVG : url('./res/FILL.svg');
+}
+
+/* Homepage SVG */
+
+.svg-container > svg{
+  fill: transparent;  
+  stroke-width: 4;
+  stroke: #EFE402;
+  width: 100%;
+  height: calc(100vh - 150px);
+  position: relative;
+  top: 100px;
+}
+
+.svg-container > svg:hover{
+  fill: #EFE402;
 }
