@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Oh no, nico</title>
 </head>
 <body>
-    <!-- Nav -->
-    <header>
+    <!-- Nav OLD -->
+    <!-- <header>
         <nav>
             <ul class="menu">
             <li class="logo attivo"><a href="index.html">Oh no, Nico</a></li>
@@ -25,17 +26,43 @@
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+<!-- Nav New -->
+<section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">Oh no, Nico</a>
+      </div>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">works</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="#!">illustrations</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+
 
     <div class="center">
-    <!-- Video BG -->
         <video autoplay muted loop id="video-bg">
             <source src="./video/video_bg.mp4" type="video/mp4">
         </video>  
         <a href="showreel.html">
-            <div class="gif-content"></div>
+            <!-- <div class="gif-content"></div> -->
         </a>
     </div>
-        <script src="script.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
