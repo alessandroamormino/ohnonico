@@ -64,8 +64,8 @@ body{
 /* Loading page */
 #bm{
   position: fixed;
-  top: -50px;
   width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background:#212121;
 }
