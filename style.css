@@ -101,7 +101,6 @@ body{
 .about-content{
   position: absolute;
   top: 100px;
-  /* padding: 35px; */
 }
 
 .about-space{
@@ -577,9 +576,12 @@ nav ul li ul li a {
   text-align: center;
   color: #ffffff;
   padding: 30px;
-  font-size: 1.8em;
   width: 100vw;
   background: #000000;
+}
+
+.footer p {
+  font-size: 21px;
 }
 
 .footer .slogan:hover{
