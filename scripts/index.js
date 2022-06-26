@@ -12,6 +12,12 @@ function init() {
   }, 2000);
 }
 
+// setTimeout(myURL, 2000);
+
+// function myURL(){
+//    window.open('index.html');
+// }
+
 
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('bm'),
