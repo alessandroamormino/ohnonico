@@ -15,51 +15,57 @@
 </head>
 <body style="background-color: #000000;">
       <!-- Nav New -->
-  <header>
-    <section class="navigation" style="background: #EFE402;">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="index.html" style="color: #000000;">Oh no, Nico</a>
+    <header>
+        <section class="navigation" style="background: #EFE402;">
+            <div class="nav-container">
+            <div class="brand">
+                <a href="index.html" style="color: #000000;">Oh no, Nico</a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                <li>
+                    <a href="#!" style="color: #000000">Works</a>
+                </li>
+                <li>
+                    <a href="about.html" style="color: #000000">About</a>
+                </li>
+                <li>
+                    <a href="#!" style="color: #000000">Illustrations</a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+        </section>
+        </header>
+    
+    <div class="showreel-content">
+        <!-- VIDEO -->
+        <div class="video">
+            <video preload controls id="showreel-video" controlsList="nodownload" webkit-playsinline playsinline>
+                <source src="./video/showreel.mp4" type="video/mp4">
+                <p>Your browser does not support embedded videos</p>
+            </video> 
+            <div class="showreel-info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magnam, aliquid quia est tenetur quisquam asperiores corrupti fuga veniam perferendis, fugiat nemo illum quidem animi impedit molestias at quas voluptatum.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad et error ipsum impedit quisquam unde sapiente harum quod aliquam? Voluptate quaerat expedita sapiente nisi natus harum sunt delectus perferendis eos?</p>
+            </div>
         </div>
-        <nav>
-          <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
-          </div>
-          <ul class="nav-list">
-            <li>
-              <a href="#!" style="color: #000000">Works</a>
-            </li>
-            <li>
-              <a href="about.html" style="color: #000000">About</a>
-            </li>
-            <li>
-              <a href="#!" style="color: #000000">Illustrations</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </header>
 
-    <!-- VIDEO -->
-    <div class="video">
-        <video preload controls id="showreel-video" controlsList="nodownload" webkit-playsinline playsinline>
-            <source src="./video/showreel.mp4" type="video/mp4">
-            <p>Your browser does not support embedded videos</p>
-        </video> 
+        <footer>
+            <div class="footer" style="position: absolute; bottom: 0;">
+              <p class="slogan">Love season means great season</p>
+              <div class="social">
+                <a href="http://www.facebook.it/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ohnonico_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://vimeo.com/" target="_blank"><i class="fa-brands fa-vimeo-v"></i></a>
+              </div>
+              <p class="copyright"><span id="cr">&#169;</span> 2022 OH NO, NICO All rights reserved</p>
+            </div>
+          </footer>
     </div>
-
-    <footer>
-        <div class="footer">
-          <p class="slogan">Love season means great season</p>
-          <div class="social">
-            <a href="http://www.facebook.it/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/ohnonico_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://vimeo.com/" target="_blank"><i class="fa-brands fa-vimeo-v"></i></a>
-          </div>
-          <p class="copyright"><span id="cr">&#169;</span> OH NO, NICO All rights reserved</p>
-        </div>
-      </footer>
     
   <script src="./scripts/nav.js"></script>
 
