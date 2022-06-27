@@ -193,6 +193,17 @@ body{
     margin-top: 4vh;
   }
 
+  #cv, 
+  #cv:visited{
+    text-decoration: none;
+    color: #000000;
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.6s linear forwards 1.5s;
+    font-weight: bold;
+    font-size: 2.5vh;
+  }
+
 }
 
 /* Tablet */
@@ -274,6 +285,17 @@ body{
     animation: fade-in 0.6s linear forwards 1.3s;
     font-weight: bold;
     margin: 4vh 0 1vh 0;
+  }
+
+  #cv, 
+  #cv:visited{
+    text-decoration: none;
+    color: #000000;
+    opacity: 0;
+    position: relative;
+    animation: fade-in 0.6s linear forwards 1.5s;
+    font-weight: bold;
+    font-size: 2.5vh;
   }
 
   /* .about-content p{
@@ -371,7 +393,7 @@ body{
     color: #000000;
     opacity: 0;
     position: relative;
-    animation: fade-in 0.6s linear forwards 1.3s;
+    animation: fade-in 0.6s linear forwards 1.5s;
     font-weight: bold;
     font-size: 2.5vh;
   }
