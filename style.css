@@ -29,7 +29,7 @@ body{
 }
 
 /* Loading page */
-#bm{
+/* #bm{
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -42,7 +42,7 @@ body{
   opacity: 0;
   height: 100vh;
   transition: opacity 2s ease-in;
-} 
+}  */
 
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -569,6 +569,13 @@ nav ul li ul li a {
 .svg-container > svg:hover{
   fill: #EFE402;
 }
+
+
+.center{
+  width: 100vw;
+  height: 100vh;
+}
+
 
 /* Footer */
 
