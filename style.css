@@ -119,6 +119,23 @@ html, body {
 
 @media all and (max-width: 580px) {
 
+  #logo-pc{
+    display: none;
+  }
+
+  .brand {
+    position: absolute;
+    float: left;
+    left: 1.5vw;
+    line-height: 100px;
+    font-size: 1.8em;
+    z-index: 99;
+  }
+
+  #logo-mobile > img{
+    height: 100px;
+  }
+
   /* Showreel */
 
   .showreel-info{
@@ -241,6 +258,20 @@ html, body {
 
 /* Tablet */
 @media all and (min-width: 580px) and (max-width: 1199px){
+
+  .brand {
+    position: absolute;
+    padding-left: 40px;
+    float: left;
+    left: 0;
+    line-height: 100px;
+    font-size: 1.8em;
+    z-index: 99;
+  }
+
+  #logo-mobile{
+    display: none;
+  }
 
   /* Showreel */
 
@@ -377,6 +408,20 @@ html, body {
 
 /* Desktop */
 @media all and (min-width: 1200px) {
+
+  .brand {
+    position: absolute;
+    padding-left: 40px;
+    float: left;
+    left: 0;
+    line-height: 100px;
+    font-size: 1.8em;
+    z-index: 99;
+  }
+
+  #logo-mobile{
+    display: none;
+  }
 
   .logo.invisibile{
     color: transparent;
@@ -704,16 +749,6 @@ nav ul li ul li a {
 .nav-container {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.brand {
-  position: absolute;
-  padding-left: 40px;
-  float: left;
-  left: 0;
-  line-height: 100px;
-  font-size: 1.8em;
-  z-index: 99;
 }
 
 /* Homepage SVG */
