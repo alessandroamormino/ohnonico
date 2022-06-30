@@ -119,6 +119,11 @@ html, body {
 
 @media all and (max-width: 580px) {
 
+  #bm{
+    width: 100px;
+    height: 100px;
+  }
+
   #logo-pc{
     display: none;
   }
