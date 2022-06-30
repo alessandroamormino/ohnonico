@@ -228,10 +228,26 @@ html, body {
     font-size: 2.3vh;
   }
 
+  .svg-container{
+    fill: transparent;  
+    stroke-width: 4;
+    stroke: #EFE402;
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+  .svg-container:hover{
+    fill: #EFE402;
+  }
+
 }
 
 /* Tablet */
-@media all and (min-width: 580px) {
+@media all and (min-width: 580px) and (max-width: 1199px){
 
   /* Showreel */
 
@@ -345,6 +361,22 @@ html, body {
 
   .about-content p{
     font-size: 2.3vh;
+  }
+
+  .svg-container{
+    fill: transparent;  
+    stroke-width: 4;
+    stroke: #EFE402;
+    width: 80%;
+    height: calc(100vh - 15vh);
+    position: relative;
+    top: 10vh;
+    left: 50%; 
+    transform: translate(-50%);
+  }
+  
+  .svg-container:hover{
+    fill: #EFE402;
   }
 
 }
@@ -469,6 +501,23 @@ html, body {
     width: 100%;
     height: 100%;
   }
+
+  .svg-container{
+    fill: transparent;  
+    stroke-width: 4;
+    stroke: #EFE402;
+    width: 80%;
+    height: calc(100vh - 15vh);
+    position: relative;
+    top: 10vh;
+    left: 50%; 
+    transform: translate(-50%);
+  }
+  
+  .svg-container:hover{
+    fill: #EFE402;
+  }
+
 
 }
 
@@ -616,6 +665,23 @@ nav ul li ul li a {
     padding: 0 25px 25px;
     background: #EFE402;
   }
+
+  .svg-container{
+    fill: transparent;  
+    stroke-width: 4;
+    stroke: #EFE402;
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+  .svg-container:hover{
+    fill: #EFE402;
+  }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -658,7 +724,7 @@ nav ul li ul li a {
 
 /* Homepage SVG */
 
-.svg-container > svg{
+/* .svg-container > svg{
   fill: transparent;  
   stroke-width: 4;
   stroke: #EFE402;
@@ -670,7 +736,7 @@ nav ul li ul li a {
 
 .svg-container > svg:hover{
   fill: #EFE402;
-}
+} */
 
 
 .center{
