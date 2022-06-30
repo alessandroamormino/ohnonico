@@ -261,6 +261,11 @@ html, body {
 /* Tablet */
 @media all and (min-width: 580px) and (max-width: 1199px){
 
+  /* #bm{
+    width: 100px;
+    height: 100px;
+  }
+
   .brand {
     position: absolute;
     padding-left: 40px;
@@ -273,6 +278,26 @@ html, body {
 
   #logo-mobile{
     display: none;
+  } */
+
+
+  #bm{
+    width: 120px;
+    height: 120px;
+  }
+/* 
+  #logo-pc{
+    display: none;
+  } */
+
+  .brand {
+    position: absolute;
+    left: 1.5vw;
+    z-index: 99;
+  }
+
+  #logo-mobile > img{
+    height: 100px;
   }
 
   /* Showreel */
@@ -411,7 +436,7 @@ html, body {
 /* Desktop */
 @media all and (min-width: 1200px) {
 
-  .brand {
+  /* .brand {
     position: absolute;
     padding-left: 40px;
     float: left;
@@ -419,14 +444,34 @@ html, body {
     line-height: 100px;
     font-size: 1.8em;
     z-index: 99;
-  }
+  } */
 
-  #logo-mobile{
+  /* #logo-mobile{
     display: none;
-  }
+  } */
 
   .logo.invisibile{
     color: transparent;
+  }
+
+
+  #bm{
+    width: 120px;
+    height: 120px;
+  }
+/* 
+  #logo-pc{
+    display: none;
+  } */
+
+  .brand {
+    position: absolute;
+    left: 1.5vw;
+    z-index: 99;
+  }
+
+  #logo-mobile > img{
+    height: 100px;
   }
 
   /* Animation about page */
@@ -726,6 +771,7 @@ nav ul li ul li a {
 }
 
 @media screen and (min-width: 800px) {
+
   .nav-list {
     display: block !important;
   }
