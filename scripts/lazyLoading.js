@@ -1,43 +1,15 @@
-(function () {
-    function logElementEvent(eventName, element) {
-      console.log(Date.now(), eventName, element.getAttribute("data-src"));
-    }
+const items = document.querySelectorAll('.appear2');
 
-    var callback_enter = function (element) {
-      logElementEvent("🔑 ENTERED", element);
-    };
-    var callback_exit = function (element) {
-      logElementEvent("🚪 EXITED", element);
-    };
-    var callback_loading = function (element) {
-      logElementEvent("⌚ LOADING", element);
-    };
-    var callback_loaded = function (element) {
-      logElementEvent("👍 LOADED", element);
-    };
-    var callback_error = function (element) {
-      logElementEvent("💀 ERROR", element);
-      element.src =
-        "https://via.placeholder.com/440x560/?text=Error+Placeholder";
-    };
-    var callback_finish = function () {
-      logElementEvent("✔️ FINISHED", document.documentElement);
-    };
-    var callback_cancel = function (element) {
-      logElementEvent("🔥 CANCEL", element);
-    };
-
-    var ll = new LazyLoad({
-      threshold: 0,
-      // Assign the callbacks defined above
-      callback_enter: callback_enter,
-      callback_exit: callback_exit,
-      callback_cancel: callback_cancel,
-      callback_loading: callback_loading,
-      callback_loaded: callback_loaded,
-      callback_error: callback_error,
-      callback_finish: callback_finish
+const active = function(entries){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+        entry.target.classList.add('inview2'); 
+        }else{
+            entry.target.classList.remove('inview2'); 
+        }
     });
-  })();
-
-  
+}
+const io2 = new IntersectionObserver(active);
+ for(let i=0; i < items.length; i++){
+    io2.observe(items[i]);
+ }
