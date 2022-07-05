@@ -95,7 +95,7 @@ html, body {
 }
 
 .desc{
-  font-family: 'Poppins', sans-serif;
+  font-family: PangramLight;
 }
 
 .about-content{
@@ -149,9 +149,13 @@ html, body {
     font-family: PangramLight;
     padding-top: 5vh;
     padding-bottom: 10vh;
-    width: 60%;
+    width: 100%;
     text-align: center;
     margin: auto;
+  }
+
+  .showreel-info > .desc.pc{
+    display: none;
   }
 
   .showreel-info > .desc {
@@ -287,6 +291,10 @@ html, body {
     height: 100%;
   }
 
+  .footer p {
+    font-size: 2.3vh;
+  }
+
 }
 
 /* Tablet */
@@ -325,6 +333,10 @@ html, body {
     width: 60%;
     text-align: center;
     margin: auto;
+  }
+
+  .showreel-info > .desc.pc{
+    display: none;
   }
 
   .showreel-info > .desc {
@@ -458,6 +470,10 @@ html, body {
   .about-space{
     margin: 5vh 5vh 7vh 5vh;
     height: 100%;
+  }
+
+  .footer p {
+    font-size: 2.3vh;
   }
 
 }
@@ -612,6 +628,10 @@ html, body {
     margin: auto;
   }
 
+  .showreel-info > .desc.mobile{
+    display: none;
+  }
+
   .showreel-info > .desc {
     margin-top: 2vh;
     color:rgba(255, 255, 255, 0.3);
@@ -642,6 +662,10 @@ html, body {
   .about-space{
     margin: 10vh 5vh 0vh 5vh;
     height: 80vh;
+  }
+
+  .footer p {
+    font-size: 2.5vh;
   }
 
 }
@@ -868,10 +892,6 @@ nav ul li ul li a {
   padding: 4vh;
   width: 100vw;
   background: #0f0b0b;
-}
-
-.footer p {
-  font-size: 2.5vh;
 }
 
 .footer .slogan:hover{
