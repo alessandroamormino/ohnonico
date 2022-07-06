@@ -986,17 +986,6 @@ nav ul li ul li a {
           transition-delay: 0.5s;
 }
 
-#img1{
-  border: 1px solid red;
-  position: absolute;
-  top: 1%;
-  left: 20%;
-}
-
-.img1-cont{
-  position: relative;
-}
-
 .img-img{
   display: block;
 }
@@ -1040,36 +1029,37 @@ nav ul li ul li a {
   margin-top: 0.25em;
 }
 
-#img2{
-  border: 1px solid red;
+#img1{
   position: absolute;
-  top: 7%;
-  right: 30%;
+  top: 1.5%;
+  left: 20%;
+}
+
+#img2{
+  position: absolute;
+  top: 1%;
+  right: 20%;
 }
 
 #img3{
-  border: 1px solid red;
   position: absolute;
   top: 17%;
   left: 10%;
 }
 
 #img4{
-  border: 1px solid red;
   position: absolute;
   top: 15%;
   right: 16%;
 }
 
 #img5{
-  border: 1px solid red;
   position: absolute;
   top: 25%;
   right: 30%;
 }
 
 #img6{
-  border: 1px solid red;
   position: absolute;
   top: 34%;
   right: 30%;
