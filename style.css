@@ -308,7 +308,7 @@ body {
 }
 
 /* Tablet */
-@media all and (min-width: 580px) and (max-width: 1199px){
+@media all and (min-width: 580px) and (max-width: 1023px){
 
   #bm-black{
     width: 120px;
@@ -490,7 +490,7 @@ body {
 }
 
 /* Desktop */
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
 
   #bm-yellow{
     width: 100px;
