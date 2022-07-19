@@ -689,7 +689,6 @@ body {
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  text-align: right;
 
   transition: transform 0.3s ease-in-out;
 
@@ -713,8 +712,9 @@ body {
   color:#EFE402;
 }
 
-.grid-item:nth-child(1):hover::after {
-  content: 'Test 1';
+.grid-item:nth-child(1):hover::before {
+  font-size: 0.5em;
+  content: 'Illustrations';
   padding: 10px;
 }
 .grid-item:nth-child(2):hover::after {
@@ -838,8 +838,10 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-auto-rows: minmax(350px, auto);
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: minmax(350px, auto); */
+  grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+  grid-auto-rows: minmax(30vw, auto);
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
