@@ -27,7 +27,17 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
   font-family: 'AlbraBold';
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Loading page */
