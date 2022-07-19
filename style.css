@@ -676,9 +676,10 @@ html, body {
 /* Illustrations */
 
 .grid-item {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  text-align: right;
 
   transition: transform 0.3s ease-in-out;
 
@@ -695,13 +696,16 @@ html, body {
 .black {
   color: #000000;
 }
-
 .white{
   color: #ffffff;
+}
+.yellow{
+  color:#EFE402;
 }
 
 .grid-item:nth-child(1):hover::after {
   content: 'Test 1';
+  padding: 10px;
 }
 .grid-item:nth-child(2):hover::after {
   content: 'Test 2';
