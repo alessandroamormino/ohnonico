@@ -897,6 +897,10 @@ nav ul li a:hover {
   color: #000000;
   font-style: italic;
 }
+nav ul li a.illus:hover {
+  color: #ffffff;
+  font-style: italic;
+}
 nav ul li a:not(:only-child):after {
   padding-left: 4px;
   content: " ▾";
