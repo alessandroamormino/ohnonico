@@ -71,7 +71,7 @@ body {
 
 .testo{
   text-align: center;
-  color: #EFE402;
+  color: #F0E500;
   z-index: 1;
 }
 
@@ -88,20 +88,20 @@ body {
 
 .first a:link{
   text-decoration: none;
-  color: #EFE402;
+  color: #F0E500;
 }
 .first a:visited{
   text-decoration: none;
-  color: #EFE402;
+  color: #F0E500;
 }
 
 .second a:link{
   text-decoration: none;
-  color: #EFE402;
+  color: #F0E500;
 }
 .second a:visited{
   text-decoration: none;
-  color: #EFE402;
+  color: #F0E500;
 }
 
 .desc{
@@ -283,7 +283,7 @@ body {
   .svg-container{
     fill: transparent;  
     stroke-width: 4;
-    stroke: #EFE402;
+    stroke: #F0E500;
     width: 80%;
     height: auto;
     position: relative;
@@ -293,7 +293,7 @@ body {
   }
   
   .svg-container:hover{
-    fill: #EFE402;
+    fill: #F0E500;
   }
 
   .about-space{
@@ -465,7 +465,7 @@ body {
   .svg-container{
     fill: transparent;  
     stroke-width: 4;
-    stroke: #EFE402;
+    stroke: #F0E500;
     width: 80%;
     height: calc(100vh - 15vh);
     position: relative;
@@ -475,7 +475,7 @@ body {
   }
   
   .svg-container:hover{
-    fill: #EFE402;
+    fill: #F0E500;
   }
 
   .about-space{
@@ -649,7 +649,7 @@ body {
   .svg-container{
     fill: transparent;  
     stroke-width: 4;
-    stroke: #EFE402;
+    stroke: #F0E500;
     width: 80%;
     height: calc(100vh - 15vh);
     position: relative;
@@ -659,7 +659,7 @@ body {
   }
   
   .svg-container:hover{
-    fill: #EFE402;
+    fill: #F0E500;
   }
 
   .about-space{
@@ -709,7 +709,7 @@ body {
   color: #ffffff;
 }
 .yellow{
-  color:#EFE402;
+  color:#F0E500;
 }
 
 
@@ -878,7 +878,7 @@ nav ul li a {
   padding: 0 20px;
   line-height: 100px;
   background: #efe30200;
-  color: #EFE402;
+  color: #F0E500;
   text-decoration: none;
   font-family: PangramLight; 
   font-size: 1.2em;
@@ -963,7 +963,7 @@ nav ul li ul li a {
 
   .nav-mobile {
     display: block;
-    background: #EFE402;
+    background: #F0E500;
   }
   nav {
     width: 100%;
@@ -990,7 +990,7 @@ nav ul li ul li a {
   .navigation {
     height: 100px;
     width: 100%;
-    background: #EFE402;
+    background: #F0E500;
     position: fixed;
     z-index: 99;
   }
@@ -1000,11 +1000,11 @@ nav ul li ul li a {
     text-decoration: none;
   }
   nav ul li a {
-    background: #EFE402;
+    background: #F0E500;
   }
   .nav-list{
     padding: 0 25px 25px;
-    background: #EFE402;
+    background: #F0E500;
   } 
 
 }
@@ -1023,14 +1023,14 @@ nav ul li ul li a {
 
   .brand a,
   .brand a:visited {
-    color: #EFE402;
+    color: #F0E500;
     text-decoration: none;
   }
 }
 
 .nav-list{
   padding-left: 25px;
-  background: #EFE402;
+  background: #F0E500;
 }
 
 .nav-container {
@@ -1055,7 +1055,7 @@ nav ul li ul li a {
 }
 
 .footer .slogan:hover{
-  color: #EFE402;
+  color: #F0E500;
 }
 
 .footer .social{
@@ -1063,7 +1063,7 @@ nav ul li ul li a {
 }
 
 .footer .social > a:hover{
-  color:#EFE402;
+  color:#F0E500;
 }
 
 .footer .social > a, 
