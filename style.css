@@ -295,9 +295,9 @@ body {
     font-size: 2.3vh;
   }
 
-  #cv:hover{
+  /* #cv:hover{
     font-style: italic;
-  }
+  } */
 
   .svg-container{
     fill: transparent;  
@@ -478,9 +478,9 @@ body {
     font-size: 2.3vh;
   }
 
-  #cv:hover{
+  /* #cv:hover{
     font-style: italic;
-  }
+  } */
   .about-content p{
     font-size: 2.3vh;
   }
@@ -624,12 +624,12 @@ body {
     opacity: 0;
     position: relative;
     animation: fade-in 0.6s linear forwards 1.5s;
-    font-family: PangramLight;
-    font-size: 2.2vh;
+    font-family: PangramRegular;
+    font-size: 1.2em;
   }
 
   #cv:hover{
-    font-style: italic;
+    color: #F0E500;
   }
 
   .showreel-content{
@@ -1215,4 +1215,19 @@ nav ul li ul li a {
 
 .fa-vimeo-v{
   font-size: 1.5em;
+}
+
+.line5{
+  margin-top: 3em;
+}
+
+.btn{
+  border-radius: 3em;
+  padding: 1.2em;
+  background: #F0E500;
+  border: 2px solid #000000;
+}
+
+.btn:hover{
+  background: #000000;
 }
