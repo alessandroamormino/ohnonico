@@ -107,6 +107,9 @@ body {
 .desc{
   font-family: PangramLight;
 }
+.desc2{
+  font-family: PangramLight;
+}
 
 .about-content{
   position: absolute;
@@ -180,6 +183,11 @@ body {
   }
 
   .showreel-info > .desc {
+    margin-top: 2vh;
+    color:rgba(255, 255, 255, 0.3);
+  }
+
+  .showreel-info > .desc2 {
     margin-top: 2vh;
     color:rgba(255, 255, 255, 0.3);
   }
@@ -362,6 +370,10 @@ body {
   }
 
   .showreel-info > .desc {
+    margin-top: 2vh;
+    color:rgba(255, 255, 255, 0.3);
+  }
+  .showreel-info > .desc2 {
     margin-top: 2vh;
     color:rgba(255, 255, 255, 0.3);
   }
@@ -650,6 +662,12 @@ body {
     margin-top: 2vh;
     color:rgba(255, 255, 255, 0.3);
   }
+  .desc2 {
+    margin-bottom: 4vh;
+    color:rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 
   
   #showreel-video{
@@ -704,17 +722,17 @@ body {
   font-size: 2em;
 }
 
-.grid-item:hover {
+/* .grid-item:hover {
   transform: scale(1.02);
-}
+} */
 
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(300px, auto);
-  gap: 20px;
-  padding: 20px;
+  /* gap: 20px; */
+  /* padding: 20px; */
   grid-auto-flow: dense;
 }
 
@@ -727,8 +745,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
     grid-auto-rows: minmax(30vw, auto);
-    gap: 20px;
-    padding: 20px;
+    /* gap: 20px; */
+    /* padding: 20px; */
     grid-auto-flow: dense;
   }
   .wide {
@@ -872,7 +890,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  font-size: 1em;
+  font-size: 0.6em;
 }
 
 @media (min-width: 600px) {
@@ -993,7 +1011,7 @@ nav ul li a:hover {
   font-style: italic;
 }
 nav ul li a.illus:hover {
-  color: #ffffff;
+  color: #000000;
   font-style: italic;
 }
 nav ul li a:not(:only-child):after {
